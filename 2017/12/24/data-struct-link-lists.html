@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Data Structures Part 1: Linked Lists</title>
+	
+	<meta name="author" content="Alexander C">
+
+	<!-- Enable responsive viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Le styles -->
+	<link href="/assets/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/assets/resources/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="/assets/resources/syntax/syntax.css" rel="stylesheet">
+	<link href="/assets/css/style.css" rel="stylesheet">
+
+	<!-- Le fav and touch icons -->
+	<!-- Update these with your own images
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+	-->
+
+	<link rel="alternate" type="application/rss+xml" title="" href="/feed.xml">
+</head>
+
+<body>
+	<nav class="navbar navbar-default visible-xs" role="navigation">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+			<a type="button" class="navbar-toggle nav-link" href="http://github.com/javaboy132">
+				<i class="fa fa-github"></i>
+			</a>
+			
+			
+			
+			<a class="navbar-brand" href="/">
+				<!--<img src="//www.gravatar.com/avatar/?s=35" class="img-circle" />-->
+				Coding Thoughts
+			</a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="/">Home</a></li>
+				<li><a href="/categories.html">Categories</a></li>
+				<li><a href="/tags.html">Tags</a></li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</nav>
+
+	<!-- nav-menu-dropdown -->
+	<div class="btn-group hidden-xs" id="nav-menu">
+		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+			<i class="fa fa-bars"></i>
+		</button>
+		<ul class="dropdown-menu" role="menu">
+			<li><a href="/"><i class="fa fa-home"></i>Home</a></li>
+			<li><a href="/categories.html"><i class="fa fa-folder"></i>Categories</a></li>
+			<li><a href="/tags.html"><i class="fa fa-tags"></i>Tags</a></li>
+			<li class="divider"></li>
+			<li><a href="#"><i class="fa fa-arrow-up"></i>Top of Page</a></li>
+		</ul>
+	</div>
+
+	<div class="col-sm-3 sidebar hidden-xs" style="">
+		<!-- sidebar.html -->
+<header class="sidebar-header" role="banner">
+	<a href="/">
+		<!--<img src="//www.gravatar.com/avatar/?s=150" class="img-circle" />-->
+	</a>
+	<h3 class="title">
+        <a href="/">Coding Thoughts</a>
+    </h3>
+</header>
+
+
+<div id="bio" class="text-center">
+	Some random programming thoughts.
+</div>
+
+
+<div id="contact-list" class="text-center">
+	<ul class="list-unstyled list-inline">
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://github.com/javaboy132">
+				<i class="fa fa-github-alt fa-lg"></i>
+			</a>
+		</li>
+		
+		
+		
+	</ul>
+	<ul id="contact-list-secondary" class="list-unstyled list-inline">
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="/feed.xml">
+				<i class="fa fa-rss fa-lg"></i>
+			</a>
+		</li>
+	</ul>
+</div>
+<!-- sidebar.html end -->
+
+	</div>
+
+	<div class="col-sm-9 col-sm-offset-3">
+		<div class="page-header">
+  <h1>Data Structures Part 1: Linked Lists </h1>
+</div>
+	
+<article>
+
+	<div class="col-sm-10">
+	 <span class="post-date">
+	   
+	   December 
+	   24th,
+	   
+	   2017
+	 </span>
+	  <div class="article_body">
+	  <p>This is the first in a series on different useful data structures in programming.  Today we’re covering linked lists, we’ll see how they are organized, look into how to inplement them, and see when and where to use them.</p>
+
+<h1 id="what-is-it">What is it?</h1>
+
+<p>A linked list is where you chain a bunch of objects together to form a list, and each object has a pointer that points to the next object in the list.</p>
+
+<p>This allows one to iterate through the list of objects by following the pointers along the way, jumping from one node to the next.</p>
+
+<p>There are actually two prominent kinds of linked lists:</p>
+<ul>
+  <li>Single Linked Lists</li>
+  <li>Doubly Linked Lists</li>
+</ul>
+
+<p>In single linked lists, each node has a pointer to the next one that comes after it. This means that there is no way of returning to the previous nodes at all, so you’ll have to traverse through the whole chain again in order to reach previous nodes.</p>
+
+<p>In Doubly linked lists, each node has a pointer pointing to the next node, and a pointer pointing to the previous node.  This is great because if we need to go backwards at all, we can simply follow the pointer backwards a bit, instead of having to re-traverse  our linked list.</p>
+
+<h1 id="code-example">Code Example</h1>
+
+<h2 id="singly-linked-list">Singly Linked List</h2>
+
+<p>Alright, let’s see how to make these things.  First a singly linked list:</p>
+
+<figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="k">struct</span> <span class="n">node</span><span class="p">{</span>
+	<span class="kt">int</span> <span class="n">value</span><span class="p">;</span><span class="c1">//the value stored at this spot, no point in having a list if it doesn't store things.
+</span>	<span class="n">node</span><span class="o">*</span> <span class="n">pnext</span><span class="p">;</span><span class="c1">//the pointer to the next node.
+</span><span class="p">};</span>
+
+<span class="kt">int</span> <span class="n">main</span><span class="p">(){</span>
+	<span class="n">node</span><span class="o">*</span> <span class="n">root</span><span class="o">=</span><span class="k">new</span> <span class="n">node</span><span class="p">();</span>
+	<span class="n">root</span><span class="o">-&gt;</span><span class="n">value</span><span class="o">=</span><span class="mi">5</span><span class="p">;</span>
+	<span class="n">node</span><span class="o">*</span> <span class="n">temp</span><span class="o">=</span><span class="k">new</span> <span class="n">node</span><span class="p">();</span>
+	<span class="n">temp</span><span class="o">-&gt;</span><span class="n">value</span><span class="o">=</span><span class="mi">6</span><span class="p">;</span>
+	<span class="n">root</span><span class="o">-&gt;</span><span class="n">pnext</span><span class="o">=</span><span class="n">temp</span><span class="p">;</span>
+	<span class="n">temp</span><span class="o">-&gt;</span><span class="n">pnext</span><span class="o">=</span><span class="k">new</span> <span class="n">node</span><span class="p">();</span>
+	<span class="n">temp</span><span class="o">=</span><span class="n">temp</span><span class="o">-&gt;</span><span class="n">pnext</span><span class="p">;</span>
+	<span class="n">temp</span><span class="o">-&gt;</span><span class="n">value</span><span class="o">=</span><span class="mi">7</span><span class="p">;</span>
+	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>Alright, this is just a basic example, you’ll most likely want to create a class to wrap the nodes in the linked list and have accessor methods, but this is just a basic example showing the concept of how to add a few nodes to the list.</p>
+
+<p>First lets disect the structure <code class="highlighter-rouge">node</code>.  It’s pretty simple, and just holds an integer <code class="highlighter-rouge">value</code> and a pointer <code class="highlighter-rouge">pnext</code> which points to another <code class="highlighter-rouge">node</code> structure, which will be the next one in the linked list.</p>
+
+<p>Now on to what the heck we’re doing in the main method.  First we create <code class="highlighter-rouge">root</code> which is a pointer to our <code class="highlighter-rouge">node</code> structure. Then we assign it to have a value of 5. So far so good.</p>
+
+<p>Next, we created another pointer, <code class="highlighter-rouge">temp</code>, to hold the node we’re currently operating on. This way we can hold the <code class="highlighter-rouge">root</code> node and not lose it, and still access the nodes with <code class="highlighter-rouge">temp</code>.  We give <code class="highlighter-rouge">temp</code> a value of 6, and  then tell <code class="highlighter-rouge">root</code>’s <code class="highlighter-rouge">pnext</code> pointer to point to <code class="highlighter-rouge">temp</code>’s node.  Now the node we created in <code class="highlighter-rouge">temp</code> is stored in our linked list and can be traverse to from <code class="highlighter-rouge">root</code>.</p>
+
+<p>Then we make a new node, and put the address into <code class="highlighter-rouge">temp</code>’s <code class="highlighter-rouge">pnext</code> pointer.  Then we update <code class="highlighter-rouge">temp</code> to point to the node we just made.</p>
+
+<p>We set the value of this next node to 7, and we’re done.</p>
+
+<p>In the end we get a linked list looking sort of like this:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Node Number</th>
+      <th><code class="highlighter-rouge">value</code></th>
+      <th><code class="highlighter-rouge">pnext</code></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>5</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>6</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td>2</td>
+      <td>7</td>
+      <td>null</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>This is great. Now how about a doubly linked list?</p>
+
+<h2 id="doubly-linked-list">Doubly Linked List</h2>
+
+<p>First let’s take a look at the code:</p>
+
+<figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="k">struct</span> <span class="n">node</span><span class="p">{</span>
+	<span class="kt">int</span> <span class="n">value</span><span class="p">;</span>
+	<span class="n">node</span><span class="o">*</span> <span class="n">prev</span><span class="p">;</span>
+	<span class="n">node</span><span class="o">*</span> <span class="n">next</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="kt">int</span> <span class="n">main</span><span class="p">(){</span>
+	<span class="n">node</span><span class="o">*</span> <span class="n">root</span> <span class="o">=</span> <span class="k">new</span> <span class="n">node</span><span class="p">();</span>
+	<span class="n">root</span><span class="o">-&gt;</span><span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+	<span class="n">node</span><span class="o">*</span> <span class="n">temp</span><span class="o">=</span><span class="k">new</span> <span class="n">node</span><span class="p">();</span>
+	<span class="n">temp</span><span class="o">-&gt;</span><span class="n">value</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
+	<span class="n">root</span><span class="o">-&gt;</span><span class="n">next</span><span class="o">=</span><span class="n">temp</span><span class="p">;</span>
+	<span class="n">temp</span><span class="o">-&gt;</span><span class="n">prev</span><span class="o">=</span><span class="n">root</span><span class="p">;</span>
+	<span class="n">temp</span><span class="o">-&gt;</span><span class="n">next</span><span class="o">=</span><span class="k">new</span> <span class="n">node</span><span class="p">();</span>
+	<span class="n">temp</span><span class="o">-&gt;</span><span class="n">next</span><span class="o">-&gt;</span><span class="n">prev</span><span class="o">=</span><span class="n">temp</span><span class="p">;</span>
+	<span class="n">temp</span><span class="o">=</span><span class="n">temp</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+	<span class="n">temp</span><span class="o">-&gt;</span><span class="n">value</span><span class="o">=</span><span class="mi">2</span><span class="p">;</span>
+	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>Oh cool. Same basic <code class="highlighter-rouge">node</code> setup with just an added pointer to hold a previous node.  This example is basically the same as the previous example, the main difference being in not losing a node when adding a new node before you can add it to the newly added node.  Let’s look at that bit more closely:</p>
+
+<figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="n">temp</span><span class="o">-&gt;</span><span class="n">next</span><span class="o">=</span><span class="k">new</span> <span class="n">node</span><span class="p">();</span>
+<span class="n">temp</span><span class="o">-&gt;</span><span class="n">next</span><span class="o">-&gt;</span><span class="n">prev</span><span class="o">=</span><span class="n">temp</span><span class="p">;</span>
+<span class="n">temp</span><span class="o">=</span><span class="n">temp</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span></code></pre></figure>
+
+<p>Here we’ve made two nodes already, and we’ve got a pointer <code class="highlighter-rouge">temp</code> that points to the last node in the list.  We first make a new node and chunk it into the next pointer.  But then before assigning <code class="highlighter-rouge">temp</code> the address of the newly added node, we need to put the address in <code class="highlighter-rouge">temp</code> into the previous pointer in the new node, otherwise we can’t get back to get the address of what was in <code class="highlighter-rouge">temp</code> to add in to the previous pointer.  This is where we do that fancy <code class="highlighter-rouge">temp-&gt;next-&gt;prev</code> thing, and why it is necessary.</p>
+
+<p>So in the end, our linked list looks like this:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Node Number</th>
+      <th><code class="highlighter-rouge">value</code></th>
+      <th><code class="highlighter-rouge">next</code></th>
+      <th><code class="highlighter-rouge">prev</code></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>null</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td>2</td>
+      <td>2</td>
+      <td>null</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Awesome. Now we’ll have a look at when, where, and why you’d use one of these things.</p>
+
+<h1 id="when-and-where-to-use-linked-lists">When and Where to Use Linked Lists</h1>
+
+<h2 id="linked-lists-vs-arrays">Linked Lists vs Arrays</h2>
+
+<p>Well, you may have noticed that these aren’t too different from arrays, in fact they’re a bit more complicated than arrays. An array is just a chunk of memory in a sequence that can be used to store values, no need for fancy pointers and things, why on earth would one want a linked list when we have arrays?  Well, scalability for one.</p>
+
+<p>When you allocate an array, you gotta know exactly how much space you need. And if you aren’t using all of what you allocated? that’s memory being taken up and wasted.  Suppose you need to store a range from 10 things to 10000 things, allocating an array off the bat with 10000 things will be a huge waste of space if you only need to store 10 things at first.</p>
+
+<p>Copying an array to expand it that way takes more time than just allocating more as you go, so linked lists can be great for expandable lists, and if you must add or remove things often, I would definitely go with a linked list.</p>
+
+<p>What about for when you need to access things in the middle of your list though?  Well then, with an array you just do <code class="highlighter-rouge">array[i]</code> and it accesses the <code class="highlighter-rouge">i</code>th element, because you know where it is relative to the starting point.  With a linked list, you have to traverse the whole thing.
+Because of this, linked lists are great for things where you iterate through the data, performing actions on sequential values in the list, and where you must add or remove things often.  For an expandable, easy to access data structure, one may wish to look elsewhere.</p>
+
+<h2 id="singly-linked-vs-doubly-linked">Singly Linked vs Doubly Linked</h2>
+
+<p>Okay, where do we use a single linked list versus a doubly linked list?  Well, a singly linked list will take up n less space, where n is the length of the list.  This is because it doesn’t need the extra pointers to previous nodes.  It can also be created faster as well, due to not having to add the addresses for those pointers.</p>
+
+<p>However, a singly linked list does have an issue, if you wish to delete something in the middle or the end, you have to re-traverse the list to get to the previous node to update what it should point its <code class="highlighter-rouge">next</code> pointer to.  For removing things, with a doubly linked list you have no issues in the middle, just traverse to the previous node and update its next to the node after, and update the node after’s previous pointer to the previous node.</p>
+
+<p>So for applications where you’re not removing things very often, or you’re only removing the very first node, such as in a queue, I would use the singly linked list, for other applications where you’re regularly removing in the middle, you can use a doubly linked list.</p>
+
+<h1 id="other-twists-on-linked-lists">Other twists on Linked Lists</h1>
+
+<p>While a basic linked list can consist of just a head pointer, it is also typical to find a tail pointer.  This is great, because it facilitates adding things at the end of the list, which is great for implementing a queue.</p>
+
+<p>There are also circular linked lists, where the tail points back to the head. These can be useful for representing things that are circular in nature, like the corners on a polygon, or for things that require taking turns.  Such as players playing a board game.</p>
+
+<p>If you are interested in reading a bit more on linked lists, feel free to take a look at them <a href="https://en.wikipedia.org/wiki/Linked_list">here</a>.</p>
+
+
+	  </div>
+
+		
+		<ul class="tag_box list-unstyled list-inline">
+		  <li><i class="fa fa-folder-open"></i></li>
+		  
+		  
+			 
+				<li><a href="/categories.html#tutorials-ref">
+					tutorials <span>(2)</span>
+					,
+				</a></li>
+			 
+				<li><a href="/categories.html#programming-ref">
+					programming <span>(2)</span>
+					,
+				</a></li>
+			 
+				<li><a href="/categories.html#data_structures-ref">
+					data_structures <span>(1)</span>
+					
+				</a></li>
+			
+		  
+		</ul>
+		  
+
+		  
+
+		<hr>
+
+		<div>
+      <section class="share col-sm-6">
+        <h4 class="section-title">Share Post</h4>
+        <a class="btn btn-default btn-sm twitter" href="http://twitter.com/share?text=Data Structures Part 1: Linked Lists"
+           onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+          <i class="fa fa-twitter fa-lg"></i>
+          Twitter
+        </a>
+        <a class="btn btn-default btn-sm facebook" href="https://www.facebook.com/sharer/sharer.php"
+           onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+          <i class="fa fa-facebook fa-lg"></i>
+          Facebook
+        </a>
+        <a class="btn btn-default btn-sm gplus"
+           onclick="window.open('https://plus.google.com/share?url='+window.location.href, 'google-plus-share', 'width=490,height=530');return false;">
+          <i class="fa fa-google-plus fa-lg"></i>
+          Google+
+        </a>
+      </section>
+
+      <section class="col-sm-6 author">
+	      <!--<img src="//www.gravatar.com/avatar/" class="img-rounded author-image" />-->
+        <h4 class="section-title author-name">Alexander C</h4>
+        <p class="author-bio">Some random programming thoughts.</p>
+      </section>
+    </div>
+
+    <div class="clearfix"></div>
+
+		<ul class="pager">
+		  
+		  <li class="previous"><a href="/2017/12/23/stack-vs-heap.html" title="Stack vs Heap">&larr; Previous</a></li>
+		  
+		  
+			<li class="next disabled"><a>Next &rarr;</a>
+		  
+		</ul>
+
+		<hr>
+	</div>
+	
+	<div class="col-sm-2 sidebar-2">
+	
+	</div>
+</article>
+<div class="clearfix"></div>
+
+
+
+
+
+		<footer>
+			<hr/>
+			<p>
+				&copy; 2017 Alexander C with <a href="http://jekyllrb.com/">Jekyll</a>. Theme: <a href="https://github.com/dbtek/dbyll">dbyll</a> by dbtek.
+			</p>
+		</footer>
+	</div>
+
+	<script type="text/javascript" src="/assets/resources/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="/assets/resources/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/assets/js/app.js"></script>
+</body>
+</html>
+
+
+
