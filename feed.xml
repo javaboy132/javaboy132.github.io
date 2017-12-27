@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2017-12-27T14:24:17-06:00</updated><id>/</id><title type="html">Coding Thoughts</title><subtitle>Some random programming thoughts.</subtitle><author><name>Alexander C</name></author><entry><title type="html">Beginning Programming Part 1: Getting Started</title><link href="/2017/12/27/beginning-programming-getting-started.html" rel="alternate" type="text/html" title="Beginning Programming Part 1: Getting Started" /><published>2017-12-27T10:59:57-06:00</published><updated>2017-12-27T10:59:57-06:00</updated><id>/2017/12/27/beginning-programming-getting-started</id><content type="html" xml:base="/2017/12/27/beginning-programming-getting-started.html">&lt;p&gt;So you want to learn how to program, but you don’t know where to start and it all seems kind of intimidating to you? Well it looks like you came to the right place.  Today I’ll be showing you how to start without needing any previous programming experience.&lt;/p&gt;
+
+&lt;h1 id=&quot;choosing-a-language-to-learn&quot;&gt;Choosing a Language to Learn&lt;/h1&gt;
+
+&lt;p&gt;First of course, you must figure out what language you want to learn.  There are many languages out there, but there isn’t a one-size-fits-all language.  Sure you can probably do a lot of things in some languages, but that doesn’t mean that you should. First let’s take a look at the different kinds of languages out there, since there are many different kinds which are capable of different things.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-different-kinds-of-languages&quot;&gt;The different kinds of languages&lt;/h2&gt;
+
+&lt;p&gt;There are three main kinds of languages:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Programming languages&lt;/li&gt;
+  &lt;li&gt;Scripting languages&lt;/li&gt;
+  &lt;li&gt;Markup languages&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Now there is some dispute over what constitutes a ‘programming’ language versus a ‘scripting’ language.  So I’m going to define it as such: ‘programming’ languages are languages that are compiled, ‘scripting’ languages are languages that are interpreted.  We’ll get into what that means later.&lt;/p&gt;
+
+&lt;h3 id=&quot;programming-languages&quot;&gt;Programming languages&lt;/h3&gt;
+
+&lt;p&gt;These are the languages that are big, brutal, and get work done.  They are generally quite capable of doing lots of things, if you wish to go into a programming, these are the languages that are used.  Some examples are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Java&lt;/li&gt;
+  &lt;li&gt;C&lt;/li&gt;
+  &lt;li&gt;C++&lt;/li&gt;
+  &lt;li&gt;Go&lt;/li&gt;
+  &lt;li&gt;Rust&lt;/li&gt;
+  &lt;li&gt;COBOL&lt;/li&gt;
+  &lt;li&gt;FORTRAN&lt;/li&gt;
+  &lt;li&gt;Lisp&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These languages all involve compilation. First the programmer will write a file with all the code in it, then they will run a program that reads this file and spits out an executable file based on that code.  The source code that the programmer wrote is not what is actually run.&lt;/p&gt;
+
+&lt;h3 id=&quot;scripting-languages&quot;&gt;Scripting languages&lt;/h3&gt;
+
+&lt;p&gt;These are languages that are easy to use, and generally great for small tasks that may be too tedious for the big programming languages.  If you want to just get your feet wet, or you’re looking for basic automation tools and things to make your everyday life easier, these are what can be used.  Some examples of scripting languages:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Javascript&lt;/li&gt;
+  &lt;li&gt;Python&lt;/li&gt;
+  &lt;li&gt;Ruby&lt;/li&gt;
+  &lt;li&gt;Perl&lt;/li&gt;
+  &lt;li&gt;Lua&lt;/li&gt;
+  &lt;li&gt;PHP&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These languages are interpreted.  That means that whoever runs them has to install a special program that takes the source code that the programmer wrote, and then figures out what to do from it at the time that the program is run.  This means that the user who runs the program will have access to the source code that you wrote.&lt;/p&gt;
+
+&lt;h3 id=&quot;markup-languages&quot;&gt;Markup languages&lt;/h3&gt;
+
+&lt;p&gt;These are languages that hold data. They don’t actual form commands that tell the computer to do things, they are just languages that hold and organize data that can be read using a program and then interpreted to mean things. Some examples:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;HTML&lt;/li&gt;
+  &lt;li&gt;CSS&lt;/li&gt;
+  &lt;li&gt;XML&lt;/li&gt;
+  &lt;li&gt;YAML&lt;/li&gt;
+  &lt;li&gt;JSON&lt;/li&gt;
+  &lt;li&gt;SVG&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These languages are also interpreted, however instead of providing commands to be interpreted, they present data that can be interpreted by a program, and then displayed.  Webpages are made using HTML this way, graphics are made using SVG, and &lt;a href=&quot;/feed.xml&quot;&gt;rss feeds&lt;/a&gt; use XML.  All of these things can be written by hand, but they can also be created using programs.&lt;/p&gt;
+
+&lt;h2 id=&quot;choosing-a-language-thats-right-for-you&quot;&gt;Choosing a language that’s right for you&lt;/h2&gt;
+
+&lt;p&gt;Alright so now we know a bit about the different kinds of languages out there, how do we choose which language to start with?  Well it all depends on what you want to do.&lt;/p&gt;
+
+&lt;h3 id=&quot;web-development&quot;&gt;Web development&lt;/h3&gt;
+
+&lt;p&gt;For web development, or making websites, there are four main languages to know, that everybody who does it knows:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;HTML&lt;/strong&gt;: This is a markup language that holds the content we’re presenting to the user.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;CSS&lt;/strong&gt;: This is the markup language that holds the data on how to present the content to the user.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Javascript&lt;/strong&gt;: This allows us to have some interactive parts to the webpage, as well as do some minor client side calculations if we need to.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;PHP&lt;/strong&gt;: This is the server side stuff that let’s us handle form submissions and database operations.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you’re interested in learning how to do web development, I would recommend starting with basic HTML and CSS.  Make pages that look pretty, then add on Javascript, and add some interactivity.  Then learn how to meld that with PHP, and you’ll be able to do most basic things you can think of.  Then learn about all those confusing javascript frameworks and stuff and realize that it all changes too fast and just end up using something like &lt;a href=&quot;https://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; instead, so you can focus on your content.
+This latter would be me.  I learned javascript many years ago before most frameworks started making it big, then the frameworks started coming out in full force and I stepped away from web development for a few years, turned back around and boom. Nobody just sticks with JQuery and basic HTML/CSS/PHP anymore, it’s all angular react whatever now.
+And most frameworks seem to be a mess.  From what I’ve heard, react is probably your best bet for now, but expect it to change within two years.&lt;/p&gt;
+
+&lt;p&gt;Web development is always a good place to start learning how to write code, but in my experience, the javascript frameworks change so quickly and move into and out of popularity so much, that if you want to stay in web development, you’ll have to hustle to keep up to date.&lt;/p&gt;
+
+&lt;h3 id=&quot;applications-development&quot;&gt;Applications development&lt;/h3&gt;
+
+&lt;p&gt;So if you’re interested in making a program for users to run on their computer, there are quite a few more options available. Such as:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Java&lt;/strong&gt;: This stuff runs on any machine with a JRE, which are pretty standard now.  Powerful enough to do some amazing things with it.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;C++&lt;/strong&gt;: This is the biggest, baddest language out there.  A bit messier than Java, but supports most of the basic features of Java.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Go&lt;/strong&gt;: This is something I’ve heard of, and is going mainstream right now.  Employers aren’t all looking for it yet, but a few are.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Rust&lt;/strong&gt;: This is another systems programming language that’s making it in the mainstream right now.  I’ve not seen any employers looking for it yet, but keep an eye on it.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;COBOL&lt;/strong&gt;: This is the Y2K one.  Nobody that I know of writes new code with it, but many closed source banking systems still run off COBOL, and there are jobs for COBOL programmers out there.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;FORTRAN&lt;/strong&gt;: This is the oldest compiled language. It is still used a bit by scientists and for benchmarking purposes I believe.  I’ve not seen it nor seen employers looking for it.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The two big languages that they teach the most in schools for beginning are Java and C++.  I started with Java and will say that it’s a good starting point, you don’t have to worry about pointers or the stack and heap, garbage collection is automatic, and it really drills home the Object Oriented Paradigm.&lt;/p&gt;
+
+&lt;p&gt;The two big languages that are must-learns for any programmer are definitely Java and C or C++.  They are in demand almost everywhere, and once you learn those, you generally will have an understanding of the basics and be able to quickly learn pretty much any other similar program.&lt;/p&gt;
+
+&lt;h3 id=&quot;scripting-and-automation&quot;&gt;Scripting and automation&lt;/h3&gt;
+
+&lt;p&gt;So if you need to learn a scripting language, for quick automation or prototyping. Some available option:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Python&lt;/strong&gt;: Probably the biggest, most widely used one I’ve come across. It has libraries for pretty much anything, and it used in everything from basic scientific processing/computation to simple game making.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Ruby&lt;/strong&gt;: Another of the bigger scripting languages, this one has a narrower user base, but is really popular for its Ruby On Rails web framework.  They update things quite frequently and are typically on the cutting edge or close to it.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Perl&lt;/strong&gt;: This is a neat little scripting language that is good for quick automation tasks.  Quite good at flinging regex stuff, was quite common but is now being overtaken by python and simliar.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Lua&lt;/strong&gt;: This is one that you don’t hear too much about, but is still around and kicking.  Lua interpreters can be quite lightweight, Lua is great for if you need a program you’ve written in a different language to have a scripting language to help extend some things (Think game engine).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The one I learned first was Python, but not by choice.  Python is a language that I wouldn’t recommend as a beginning language, as it relies on whitespace placement in order to run.  I would recommend learning either a programming language like Java or C++ first, or starting out with even something like Javascript.  Get used to using braces to define your code blocks, not indenting.&lt;/p&gt;
+
+&lt;h1 id=&quot;ive-picked-a-language-now-what&quot;&gt;I’ve Picked a Language, Now What?&lt;/h1&gt;
+
+&lt;p&gt;Well then, you’re off to the races. The first thing you need to do in order to learn a language, is to have the facilities needed to compile and run the code. This can typically be acquired from the website for the language, or from your package system.
+I’m going to be teaching Java first, but I may also provide tutorials for other languages as well, such as C++ as seen in my &lt;a href=&quot;/2017/12/24/data-struct-link-lists&quot;&gt;data structures part 1&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;So first I’ll walk you through setting up a Java compiler.&lt;/p&gt;
+
+&lt;h2 id=&quot;on-linux&quot;&gt;On Linux:&lt;/h2&gt;
+
+&lt;p&gt;If you use a real operating system, use your package manager to install the openjdk.  Look for a jre8 or jre9 version. on Arch Linux you’ll do something like this:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;pacman &lt;span class=&quot;nt&quot;&gt;-S&lt;/span&gt; jre9-openjdk&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Then type your password and hit enter when it asks if you want to install.&lt;/p&gt;
+
+&lt;p&gt;On Debian or Ubuntu it’ll look similar to this, just be sure to double check the package name:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get install openjdk9&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Then we’ll also be using vim. So go install that too:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;c&quot;&gt;# for arch&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;pacman &lt;span class=&quot;nt&quot;&gt;-S&lt;/span&gt; vim
+
+&lt;span class=&quot;c&quot;&gt;# for Debian/Ubuntu&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get install vim&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;on-windows&quot;&gt;On Windows:&lt;/h2&gt;
+
+&lt;p&gt;What you need to run java on your computer is a JRE, and a JDK.  both are install when you get the JDK.  Go to &lt;a href=&quot;http://www.oracle.com/technetwork/java/javase/downloads/index-jsp-138363.html#javasejdk&quot;&gt;Oracle’s website&lt;/a&gt; and find the link labeled JDK.  Click it, it’ll download. Run it, and hope it works.&lt;br /&gt;
+Then you’ll want to double check that the bin folder of the JDK is in your path.  Open up a command prompt and type &lt;code class=&quot;highlighter-rouge&quot;&gt;javac&lt;/code&gt; into it and see what happens. If it spits out a big thing on help with using it, then it works, if not, you need to go edit your environment variables.&lt;/p&gt;
+
+&lt;p&gt;To edit your path, view the instructions &lt;a href=&quot;https://www.java.com/en/download/help/path.xml&quot;&gt;here&lt;/a&gt;. It provides help for Windows 7/8/10.  Basically what you need to do is find where the installer installed the jdk binaries, and then put that file path into your PATH variable.&lt;/p&gt;
+
+&lt;p&gt;Next you need a real editor to use with it.  If you’re weak you’ll use Notepad++, but I’ll be using vim so I recommend installing &lt;a href=&quot;https://vim.sourceforge.io/download.php#pc&quot;&gt;gvim&lt;/a&gt; This is the same thing I use, but it’ll have a gui for those so inclined.&lt;/p&gt;
+
+&lt;h1 id=&quot;next-steps&quot;&gt;Next Steps:&lt;/h1&gt;
+
+&lt;p&gt;Well the first thing to do is to write a hello world program, and we’ll need to make sure you got all the things set up properly as well.  So first create a file called ‘HelloWorld.java’ you can do this by typing &lt;code class=&quot;highlighter-rouge&quot;&gt;vim HelloWorld.java&lt;/code&gt; on Linux, or opening gvim on windows and making a new file.&lt;/p&gt;
+
+&lt;p&gt;Type this into it:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;HelloWorld&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+	
+	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello World&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Save it with the good old &lt;code class=&quot;highlighter-rouge&quot;&gt;:w&lt;/code&gt; and then close vim with &lt;code class=&quot;highlighter-rouge&quot;&gt;:q&lt;/code&gt;.  Type in &lt;code class=&quot;highlighter-rouge&quot;&gt;javac HelloWorld.java&lt;/code&gt; and then it’ll compile it.  Then you’ll discover a HelloWorld.class file in your directory.  Run it with &lt;code class=&quot;highlighter-rouge&quot;&gt;java HelloWorld&lt;/code&gt; and then it’ll print the words &lt;code class=&quot;highlighter-rouge&quot;&gt;Hello World&lt;/code&gt; for you to see in all their glory.&lt;/p&gt;
+
+&lt;p&gt;In our next installment, we’ll be stepping through this example, as well as introducing some more exciting examples.&lt;/p&gt;</content><author><name>Alexander C</name></author><summary type="html">So you want to learn how to program, but you don’t know where to start and it all seems kind of intimidating to you? Well it looks like you came to the right place. Today I’ll be showing you how to start without needing any previous programming experience.</summary></entry><entry><title type="html">Data Structures Part 1: Linked Lists</title><link href="/2017/12/24/data-struct-link-lists.html" rel="alternate" type="text/html" title="Data Structures Part 1: Linked Lists" /><published>2017-12-24T07:57:58-06:00</published><updated>2017-12-24T07:57:58-06:00</updated><id>/2017/12/24/data-struct-link-lists</id><content type="html" xml:base="/2017/12/24/data-struct-link-lists.html">&lt;p&gt;This is the first in a series on different useful data structures in programming.  Today we’re covering linked lists, we’ll see how they are organized, look into how to inplement them, and see when and where to use them.&lt;/p&gt;
+
+&lt;h1 id=&quot;what-is-it&quot;&gt;What is it?&lt;/h1&gt;
+
+&lt;p&gt;A linked list is where you chain a bunch of objects together to form a list, and each object has a pointer that points to the next object in the list.&lt;/p&gt;
+
+&lt;p&gt;This allows one to iterate through the list of objects by following the pointers along the way, jumping from one node to the next.&lt;/p&gt;
+
+&lt;p&gt;There are actually two prominent kinds of linked lists:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Single Linked Lists&lt;/li&gt;
+  &lt;li&gt;Doubly Linked Lists&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In single linked lists, each node has a pointer to the next one that comes after it. This means that there is no way of returning to the previous nodes at all, so you’ll have to traverse through the whole chain again in order to reach previous nodes.&lt;/p&gt;
+
+&lt;p&gt;In Doubly linked lists, each node has a pointer pointing to the next node, and a pointer pointing to the previous node.  This is great because if we need to go backwards at all, we can simply follow the pointer backwards a bit, instead of having to re-traverse  our linked list.&lt;/p&gt;
+
+&lt;h1 id=&quot;code-example&quot;&gt;Code Example&lt;/h1&gt;
+
+&lt;h2 id=&quot;singly-linked-list&quot;&gt;Singly Linked List&lt;/h2&gt;
+
+&lt;p&gt;Alright, let’s see how to make these things.  First a singly linked list:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-cpp&quot; data-lang=&quot;cpp&quot;&gt;&lt;span class=&quot;k&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;node&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//the value stored at this spot, no point in having a list if it doesn't store things.
+&lt;/span&gt;	&lt;span class=&quot;n&quot;&gt;node&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pnext&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//the pointer to the next node.
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;node&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;node&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;node&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;temp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;node&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;temp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pnext&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;temp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;temp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pnext&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;node&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;temp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;temp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pnext&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;temp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Alright, this is just a basic example, you’ll most likely want to create a class to wrap the nodes in the linked list and have accessor methods, but this is just a basic example showing the concept of how to add a few nodes to the list.&lt;/p&gt;
+
+&lt;p&gt;First lets disect the structure &lt;code class=&quot;highlighter-rouge&quot;&gt;node&lt;/code&gt;.  It’s pretty simple, and just holds an integer &lt;code class=&quot;highlighter-rouge&quot;&gt;value&lt;/code&gt; and a pointer &lt;code class=&quot;highlighter-rouge&quot;&gt;pnext&lt;/code&gt; which points to another &lt;code class=&quot;highlighter-rouge&quot;&gt;node&lt;/code&gt; structure, which will be the next one in the linked list.&lt;/p&gt;
+
+&lt;p&gt;Now on to what the heck we’re doing in the main method.  First we create &lt;code class=&quot;highlighter-rouge&quot;&gt;root&lt;/code&gt; which is a pointer to our &lt;code class=&quot;highlighter-rouge&quot;&gt;node&lt;/code&gt; structure. Then we assign it to have a value of 5. So far so good.&lt;/p&gt;
+
+&lt;p&gt;Next, we created another pointer, &lt;code class=&quot;highlighter-rouge&quot;&gt;temp&lt;/code&gt;, to hold the node we’re currently operating on. This way we can hold the &lt;code class=&quot;highlighter-rouge&quot;&gt;root&lt;/code&gt; node and not lose it, and still access the nodes with &lt;code class=&quot;highlighter-rouge&quot;&gt;temp&lt;/code&gt;.  We give &lt;code class=&quot;highlighter-rouge&quot;&gt;temp&lt;/code&gt; a value of 6, and  then tell &lt;code class=&quot;highlighter-rouge&quot;&gt;root&lt;/code&gt;’s &lt;code class=&quot;highlighter-rouge&quot;&gt;pnext&lt;/code&gt; pointer to point to &lt;code class=&quot;highlighter-rouge&quot;&gt;temp&lt;/code&gt;’s node.  Now the node we created in &lt;code class=&quot;highlighter-rouge&quot;&gt;temp&lt;/code&gt; is stored in our linked list and can be traverse to from &lt;code class=&quot;highlighter-rouge&quot;&gt;root&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Then we make a new node, and put the address into &lt;code class=&quot;highlighter-rouge&quot;&gt;temp&lt;/code&gt;’s &lt;code class=&quot;highlighter-rouge&quot;&gt;pnext&lt;/code&gt; pointer.  Then we update &lt;code class=&quot;highlighter-rouge&quot;&gt;temp&lt;/code&gt; to point to the node we just made.&lt;/p&gt;
+
+&lt;p&gt;We set the value of this next node to 7, and we’re done.&lt;/p&gt;
+
+&lt;p&gt;In the end we get a linked list looking sort of like this:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Node Number&lt;/th&gt;
+      &lt;th&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;value&lt;/code&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;pnext&lt;/code&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;5&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;6&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;7&lt;/td&gt;
+      &lt;td&gt;null&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;This is great. Now how about a doubly linked list?&lt;/p&gt;
+
+&lt;h2 id=&quot;doubly-linked-list&quot;&gt;Doubly Linked List&lt;/h2&gt;
+
+&lt;p&gt;First let’s take a look at the code:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-cpp&quot; data-lang=&quot;cpp&quot;&gt;&lt;span class=&quot;k&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;node&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;node&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;prev&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;node&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;node&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;node&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;node&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;temp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;node&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;temp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;temp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;temp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;prev&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;temp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;node&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;temp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;prev&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;temp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;temp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;temp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;temp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Oh cool. Same basic &lt;code class=&quot;highlighter-rouge&quot;&gt;node&lt;/code&gt; setup with just an added pointer to hold a previous node.  This example is basically the same as the previous example, the main difference being in not losing a node when adding a new node before you can add it to the newly added node.  Let’s look at that bit more closely:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-cpp&quot; data-lang=&quot;cpp&quot;&gt;&lt;span class=&quot;n&quot;&gt;temp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;node&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;temp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;prev&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;temp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;temp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;temp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Here we’ve made two nodes already, and we’ve got a pointer &lt;code class=&quot;highlighter-rouge&quot;&gt;temp&lt;/code&gt; that points to the last node in the list.  We first make a new node and chunk it into the next pointer.  But then before assigning &lt;code class=&quot;highlighter-rouge&quot;&gt;temp&lt;/code&gt; the address of the newly added node, we need to put the address in &lt;code class=&quot;highlighter-rouge&quot;&gt;temp&lt;/code&gt; into the previous pointer in the new node, otherwise we can’t get back to get the address of what was in &lt;code class=&quot;highlighter-rouge&quot;&gt;temp&lt;/code&gt; to add in to the previous pointer.  This is where we do that fancy &lt;code class=&quot;highlighter-rouge&quot;&gt;temp-&amp;gt;next-&amp;gt;prev&lt;/code&gt; thing, and why it is necessary.&lt;/p&gt;
+
+&lt;p&gt;So in the end, our linked list looks like this:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Node Number&lt;/th&gt;
+      &lt;th&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;value&lt;/code&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;next&lt;/code&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;prev&lt;/code&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;null&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;null&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Awesome. Now we’ll have a look at when, where, and why you’d use one of these things.&lt;/p&gt;
+
+&lt;h1 id=&quot;when-and-where-to-use-linked-lists&quot;&gt;When and Where to Use Linked Lists&lt;/h1&gt;
+
+&lt;h2 id=&quot;linked-lists-vs-arrays&quot;&gt;Linked Lists vs Arrays&lt;/h2&gt;
+
+&lt;p&gt;Well, you may have noticed that these aren’t too different from arrays, in fact they’re a bit more complicated than arrays. An array is just a chunk of memory in a sequence that can be used to store values, no need for fancy pointers and things, why on earth would one want a linked list when we have arrays?  Well, scalability for one.&lt;/p&gt;
+
+&lt;p&gt;When you allocate an array, you gotta know exactly how much space you need. And if you aren’t using all of what you allocated? that’s memory being taken up and wasted.  Suppose you need to store a range from 10 things to 10000 things, allocating an array off the bat with 10000 things will be a huge waste of space if you only need to store 10 things at first.&lt;/p&gt;
+
+&lt;p&gt;Copying an array to expand it that way takes more time than just allocating more as you go, so linked lists can be great for expandable lists, and if you must add or remove things often, I would definitely go with a linked list.&lt;/p&gt;
+
+&lt;p&gt;What about for when you need to access things in the middle of your list though?  Well then, with an array you just do &lt;code class=&quot;highlighter-rouge&quot;&gt;array[i]&lt;/code&gt; and it accesses the &lt;code class=&quot;highlighter-rouge&quot;&gt;i&lt;/code&gt;th element, because you know where it is relative to the starting point.  With a linked list, you have to traverse the whole thing.
+Because of this, linked lists are great for things where you iterate through the data, performing actions on sequential values in the list, and where you must add or remove things often.  For an expandable, easy to access data structure, one may wish to look elsewhere.&lt;/p&gt;
+
+&lt;h2 id=&quot;singly-linked-vs-doubly-linked&quot;&gt;Singly Linked vs Doubly Linked&lt;/h2&gt;
+
+&lt;p&gt;Okay, where do we use a single linked list versus a doubly linked list?  Well, a singly linked list will take up n less space, where n is the length of the list.  This is because it doesn’t need the extra pointers to previous nodes.  It can also be created faster as well, due to not having to add the addresses for those pointers.&lt;/p&gt;
+
+&lt;p&gt;However, a singly linked list does have an issue, if you wish to delete something in the middle or the end, you have to re-traverse the list to get to the previous node to update what it should point its &lt;code class=&quot;highlighter-rouge&quot;&gt;next&lt;/code&gt; pointer to.  For removing things, with a doubly linked list you have no issues in the middle, just traverse to the previous node and update its next to the node after, and update the node after’s previous pointer to the previous node.&lt;/p&gt;
+
+&lt;p&gt;So for applications where you’re not removing things very often, or you’re only removing the very first node, such as in a queue, I would use the singly linked list, for other applications where you’re regularly removing in the middle, you can use a doubly linked list.&lt;/p&gt;
+
+&lt;h1 id=&quot;other-twists-on-linked-lists&quot;&gt;Other twists on Linked Lists&lt;/h1&gt;
+
+&lt;p&gt;While a basic linked list can consist of just a head pointer, it is also typical to find a tail pointer.  This is great, because it facilitates adding things at the end of the list, which is great for implementing a queue.&lt;/p&gt;
+
+&lt;p&gt;There are also circular linked lists, where the tail points back to the head. These can be useful for representing things that are circular in nature, like the corners on a polygon, or for things that require taking turns.  Such as players playing a board game.&lt;/p&gt;
+
+&lt;p&gt;If you are interested in reading a bit more on linked lists, feel free to take a look at them &lt;a href=&quot;https://en.wikipedia.org/wiki/Linked_list&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</content><author><name>Alexander C</name></author><summary type="html">This is the first in a series on different useful data structures in programming. Today we’re covering linked lists, we’ll see how they are organized, look into how to inplement them, and see when and where to use them.</summary></entry><entry><title type="html">Stack vs Heap</title><link href="/2017/12/23/stack-vs-heap.html" rel="alternate" type="text/html" title="Stack vs Heap" /><published>2017-12-23T17:27:50-06:00</published><updated>2017-12-23T17:27:50-06:00</updated><id>/2017/12/23/stack-vs-heap</id><content type="html" xml:base="/2017/12/23/stack-vs-heap.html">&lt;p&gt;What is the stack and what is the heap? And what is the difference between these two?  That’s what we’re looking at today.&lt;/p&gt;
+
+&lt;h1 id=&quot;the-stack&quot;&gt;The Stack&lt;/h1&gt;
+
+&lt;p&gt;This is the thing that local variables are stored on usually, as well as return values and function parameters.  For example, if you had something that looks like this:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-cpp&quot; data-lang=&quot;cpp&quot;&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+	&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;a= %d b= %d&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Then &lt;code class=&quot;highlighter-rouge&quot;&gt;a&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;b&lt;/code&gt; will be stored on the stack.  The stack is copied for each function as well, and is often called a &lt;a href=&quot;https://en.wikipedia.org/wiki/Call_stack&quot;&gt;call-stack&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-is-the-stack-organized&quot;&gt;How is the stack organized?&lt;/h2&gt;
+
+&lt;p&gt;This relies on an understanding of how memory is organized.&lt;/p&gt;
+
+&lt;p&gt;Memory can basically be thought of as one long street with a bunch of houses on it, in each house resides multiple bytes based on the bit width of your device, 4 bytes wide for 32-bit systems, 8 wide for 64-bit systems.  Each byte lives in its own little apartment.  Each apartment gets a number, corresponding to which apartment it is within which house.&lt;/p&gt;
+
+&lt;p&gt;So for the leftmost house on the block, we have 4 apartments, labeled 0, 1, 2, 3. For the next house they’re numbered 4, 5, 6, 7, and so on.  However to make things simpler, when we ring the doorbell on a house, we can access each of the bytes inside, so for accessing apartment 3, we can use address 0, and that will get us access to bytes/apartments 0, 1, 2, and 3.&lt;/p&gt;
+
+&lt;p&gt;Now that’s the basics of how memory is organized, how does this relate to the stack? Well the stack is in memory of course!  When we have a stack, we have a stack pointer that points to the top of the stack.&lt;/p&gt;
+
+&lt;p&gt;So basically a stack is allocated, a chunk of these houses which are all next to each other are reserved to hold the stack.  Then we get a stack pointer that points to a house that is available for use.&lt;/p&gt;
+
+&lt;p&gt;Then when we need to push something onto the stack, we put the value where the pointer was pointing, and the increase the address the pointer is pointing to so that it points to the next available house.&lt;/p&gt;
+
+&lt;p&gt;When we need to pop something, we just decrease the stack pointer and get the value that it is pointing to.&lt;/p&gt;
+
+&lt;h2 id=&quot;different-stack-formats&quot;&gt;Different stack formats&lt;/h2&gt;
+
+&lt;p&gt;It turns out that there are a few different kinds of stack organization, as this is really an abstract thing with more than one way to do it.  In fact there are four kinds:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Full Ascending&lt;/li&gt;
+  &lt;li&gt;Empty Ascending&lt;/li&gt;
+  &lt;li&gt;Full Descending&lt;/li&gt;
+  &lt;li&gt;Empty Ascending&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Of course if you look closely, you’ll notice that these are really just permutations of full or empty, and ascending or descending.&lt;/p&gt;
+
+&lt;p&gt;So what makes a stack empty or full? Well, this simply has to do with whether or not the stack pointer is pointing to the next empty house, or the last filled house.&lt;/p&gt;
+
+&lt;p&gt;What makes a stack ascending or descending? This just has to do with whether we start with the highest numbered house and count down, or start at the lowest numbered stack and count up.&lt;/p&gt;
+
+&lt;p&gt;Is there any advantage to one method or another?  Not really, but usually it’s nice to have the stack expand towards a direction where it has lots of space to expand.&lt;/p&gt;
+
+&lt;h1 id=&quot;the-heap&quot;&gt;The Heap&lt;/h1&gt;
+
+&lt;p&gt;Okay, on to the heap.  This is where your objects are stored.  In C++ when you use the &lt;code class=&quot;highlighter-rouge&quot;&gt;new&lt;/code&gt; keyword, you create the object on the heap and store the address of the item into your variable. For example:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-cpp&quot; data-lang=&quot;cpp&quot;&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+	&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1337&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;In this example, we create a pointer &lt;code class=&quot;highlighter-rouge&quot;&gt;a&lt;/code&gt; which receives the address of an integer that has been allocated on the heap with value 1337.&lt;/p&gt;
+
+&lt;p&gt;The heap is a special place though, because unlike the stack, it stays put for the entirety of a program’s existence, and doesn’t create a new version for each function.  This is great because there can be some overhead when calling functions because of this.&lt;/p&gt;
+
+&lt;h1 id=&quot;heap-vs-stack-final-showdown&quot;&gt;Heap vs Stack Final Showdown&lt;/h1&gt;
+
+&lt;p&gt;So, when you call a function with some parameters, what happens?&lt;/p&gt;
+
+&lt;p&gt;With the stack, passing parameters by value, the values must be copied over to the new stack, which will take up memory, and may take up some time.  How much memory and how much time depends on how large the data is.&lt;/p&gt;
+
+&lt;p&gt;With the heap, passing parameters by reference, the values stay put in the heap, and the addresses are copied, taking up less memory and not quite as much time.&lt;/p&gt;
+
+&lt;p&gt;So when should we use what?  Should we then just use pass by reference for everything?  No. Because copying an address will take time and memory space too.  In fact most addresses will take about the same amount of memory and time as an integer.&lt;/p&gt;
+
+&lt;p&gt;So for nearly any simple type, just pass by value.  But for things like arrays, fancy data structures, and your fancy objects, it might be a good idea to pass by reference, just be aware that doing so can result in your original data being modified.&lt;/p&gt;
+
+&lt;p&gt;Stay tuned for more stuff on pointers, and possibly the call-stack.&lt;/p&gt;</content><author><name>Alexander C</name></author><summary type="html">What is the stack and what is the heap? And what is the difference between these two? That’s what we’re looking at today.</summary></entry></feed>

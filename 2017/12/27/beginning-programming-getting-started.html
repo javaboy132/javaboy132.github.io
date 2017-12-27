@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Beginning Programming Part 1: Getting Started</title>
+	
+	<meta name="author" content="Alexander C">
+
+	<!-- Enable responsive viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Le styles -->
+	<link href="/assets/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/assets/resources/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="/assets/resources/syntax/syntax.css" rel="stylesheet">
+	<link href="/assets/css/style.css" rel="stylesheet">
+
+	<!-- Le fav and touch icons -->
+	<!-- Update these with your own images
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+	-->
+
+	<link rel="alternate" type="application/rss+xml" title="" href="/feed.xml">
+</head>
+
+<body>
+	<nav class="navbar navbar-default visible-xs" role="navigation">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+			<a type="button" class="navbar-toggle nav-link" href="http://github.com/javaboy132">
+				<i class="fa fa-github"></i>
+			</a>
+			
+			
+			
+			<a class="navbar-brand" href="/">
+				<!--<img src="//www.gravatar.com/avatar/?s=35" class="img-circle" />-->
+				Coding Thoughts
+			</a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="/">Home</a></li>
+				<li><a href="/categories.html">Categories</a></li>
+				<li><a href="/tags.html">Tags</a></li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</nav>
+
+	<!-- nav-menu-dropdown -->
+	<div class="btn-group hidden-xs" id="nav-menu">
+		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+			<i class="fa fa-bars"></i>
+		</button>
+		<ul class="dropdown-menu" role="menu">
+			<li><a href="/"><i class="fa fa-home"></i>Home</a></li>
+			<li><a href="/categories.html"><i class="fa fa-folder"></i>Categories</a></li>
+			<li><a href="/tags.html"><i class="fa fa-tags"></i>Tags</a></li>
+			<li class="divider"></li>
+			<li><a href="#"><i class="fa fa-arrow-up"></i>Top of Page</a></li>
+		</ul>
+	</div>
+
+	<div class="col-sm-3 sidebar hidden-xs" style="">
+		<!-- sidebar.html -->
+<header class="sidebar-header" role="banner">
+	<a href="/">
+		<!--<img src="//www.gravatar.com/avatar/?s=150" class="img-circle" />-->
+	</a>
+	<h3 class="title">
+        <a href="/">Coding Thoughts</a>
+    </h3>
+</header>
+
+
+<div id="bio" class="text-center">
+	Some random programming thoughts.
+</div>
+
+
+<div id="contact-list" class="text-center">
+	<ul class="list-unstyled list-inline">
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://github.com/javaboy132">
+				<i class="fa fa-github-alt fa-lg"></i>
+			</a>
+		</li>
+		
+		
+		
+	</ul>
+	<ul id="contact-list-secondary" class="list-unstyled list-inline">
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="/feed.xml">
+				<i class="fa fa-rss fa-lg"></i>
+			</a>
+		</li>
+	</ul>
+</div>
+<!-- sidebar.html end -->
+
+	</div>
+
+	<div class="col-sm-9 col-sm-offset-3">
+		<div class="page-header">
+  <h1>Beginning Programming Part 1: Getting Started </h1>
+</div>
+	
+<article>
+
+	<div class="col-sm-10">
+	 <span class="post-date">
+	   
+	   December 
+	   27th,
+	   
+	   2017
+	 </span>
+	  <div class="article_body">
+	  <p>So you want to learn how to program, but you don’t know where to start and it all seems kind of intimidating to you? Well it looks like you came to the right place.  Today I’ll be showing you how to start without needing any previous programming experience.</p>
+
+<h1 id="choosing-a-language-to-learn">Choosing a Language to Learn</h1>
+
+<p>First of course, you must figure out what language you want to learn.  There are many languages out there, but there isn’t a one-size-fits-all language.  Sure you can probably do a lot of things in some languages, but that doesn’t mean that you should. First let’s take a look at the different kinds of languages out there, since there are many different kinds which are capable of different things.</p>
+
+<h2 id="the-different-kinds-of-languages">The different kinds of languages</h2>
+
+<p>There are three main kinds of languages:</p>
+
+<ul>
+  <li>Programming languages</li>
+  <li>Scripting languages</li>
+  <li>Markup languages</li>
+</ul>
+
+<p>Now there is some dispute over what constitutes a ‘programming’ language versus a ‘scripting’ language.  So I’m going to define it as such: ‘programming’ languages are languages that are compiled, ‘scripting’ languages are languages that are interpreted.  We’ll get into what that means later.</p>
+
+<h3 id="programming-languages">Programming languages</h3>
+
+<p>These are the languages that are big, brutal, and get work done.  They are generally quite capable of doing lots of things, if you wish to go into a programming, these are the languages that are used.  Some examples are:</p>
+
+<ul>
+  <li>Java</li>
+  <li>C</li>
+  <li>C++</li>
+  <li>Go</li>
+  <li>Rust</li>
+  <li>COBOL</li>
+  <li>FORTRAN</li>
+  <li>Lisp</li>
+</ul>
+
+<p>These languages all involve compilation. First the programmer will write a file with all the code in it, then they will run a program that reads this file and spits out an executable file based on that code.  The source code that the programmer wrote is not what is actually run.</p>
+
+<h3 id="scripting-languages">Scripting languages</h3>
+
+<p>These are languages that are easy to use, and generally great for small tasks that may be too tedious for the big programming languages.  If you want to just get your feet wet, or you’re looking for basic automation tools and things to make your everyday life easier, these are what can be used.  Some examples of scripting languages:</p>
+
+<ul>
+  <li>Javascript</li>
+  <li>Python</li>
+  <li>Ruby</li>
+  <li>Perl</li>
+  <li>Lua</li>
+  <li>PHP</li>
+</ul>
+
+<p>These languages are interpreted.  That means that whoever runs them has to install a special program that takes the source code that the programmer wrote, and then figures out what to do from it at the time that the program is run.  This means that the user who runs the program will have access to the source code that you wrote.</p>
+
+<h3 id="markup-languages">Markup languages</h3>
+
+<p>These are languages that hold data. They don’t actual form commands that tell the computer to do things, they are just languages that hold and organize data that can be read using a program and then interpreted to mean things. Some examples:</p>
+
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>XML</li>
+  <li>YAML</li>
+  <li>JSON</li>
+  <li>SVG</li>
+</ul>
+
+<p>These languages are also interpreted, however instead of providing commands to be interpreted, they present data that can be interpreted by a program, and then displayed.  Webpages are made using HTML this way, graphics are made using SVG, and <a href="/feed.xml">rss feeds</a> use XML.  All of these things can be written by hand, but they can also be created using programs.</p>
+
+<h2 id="choosing-a-language-thats-right-for-you">Choosing a language that’s right for you</h2>
+
+<p>Alright so now we know a bit about the different kinds of languages out there, how do we choose which language to start with?  Well it all depends on what you want to do.</p>
+
+<h3 id="web-development">Web development</h3>
+
+<p>For web development, or making websites, there are four main languages to know, that everybody who does it knows:</p>
+
+<ul>
+  <li><strong>HTML</strong>: This is a markup language that holds the content we’re presenting to the user.</li>
+  <li><strong>CSS</strong>: This is the markup language that holds the data on how to present the content to the user.</li>
+  <li><strong>Javascript</strong>: This allows us to have some interactive parts to the webpage, as well as do some minor client side calculations if we need to.</li>
+  <li><strong>PHP</strong>: This is the server side stuff that let’s us handle form submissions and database operations.</li>
+</ul>
+
+<p>If you’re interested in learning how to do web development, I would recommend starting with basic HTML and CSS.  Make pages that look pretty, then add on Javascript, and add some interactivity.  Then learn how to meld that with PHP, and you’ll be able to do most basic things you can think of.  Then learn about all those confusing javascript frameworks and stuff and realize that it all changes too fast and just end up using something like <a href="https://jekyllrb.com">Jekyll</a> instead, so you can focus on your content.
+This latter would be me.  I learned javascript many years ago before most frameworks started making it big, then the frameworks started coming out in full force and I stepped away from web development for a few years, turned back around and boom. Nobody just sticks with JQuery and basic HTML/CSS/PHP anymore, it’s all angular react whatever now.
+And most frameworks seem to be a mess.  From what I’ve heard, react is probably your best bet for now, but expect it to change within two years.</p>
+
+<p>Web development is always a good place to start learning how to write code, but in my experience, the javascript frameworks change so quickly and move into and out of popularity so much, that if you want to stay in web development, you’ll have to hustle to keep up to date.</p>
+
+<h3 id="applications-development">Applications development</h3>
+
+<p>So if you’re interested in making a program for users to run on their computer, there are quite a few more options available. Such as:</p>
+
+<ul>
+  <li><strong>Java</strong>: This stuff runs on any machine with a JRE, which are pretty standard now.  Powerful enough to do some amazing things with it.</li>
+  <li><strong>C++</strong>: This is the biggest, baddest language out there.  A bit messier than Java, but supports most of the basic features of Java.</li>
+  <li><strong>Go</strong>: This is something I’ve heard of, and is going mainstream right now.  Employers aren’t all looking for it yet, but a few are.</li>
+  <li><strong>Rust</strong>: This is another systems programming language that’s making it in the mainstream right now.  I’ve not seen any employers looking for it yet, but keep an eye on it.</li>
+  <li><strong>COBOL</strong>: This is the Y2K one.  Nobody that I know of writes new code with it, but many closed source banking systems still run off COBOL, and there are jobs for COBOL programmers out there.</li>
+  <li><strong>FORTRAN</strong>: This is the oldest compiled language. It is still used a bit by scientists and for benchmarking purposes I believe.  I’ve not seen it nor seen employers looking for it.</li>
+</ul>
+
+<p>The two big languages that they teach the most in schools for beginning are Java and C++.  I started with Java and will say that it’s a good starting point, you don’t have to worry about pointers or the stack and heap, garbage collection is automatic, and it really drills home the Object Oriented Paradigm.</p>
+
+<p>The two big languages that are must-learns for any programmer are definitely Java and C or C++.  They are in demand almost everywhere, and once you learn those, you generally will have an understanding of the basics and be able to quickly learn pretty much any other similar program.</p>
+
+<h3 id="scripting-and-automation">Scripting and automation</h3>
+
+<p>So if you need to learn a scripting language, for quick automation or prototyping. Some available option:</p>
+
+<ul>
+  <li><strong>Python</strong>: Probably the biggest, most widely used one I’ve come across. It has libraries for pretty much anything, and it used in everything from basic scientific processing/computation to simple game making.</li>
+  <li><strong>Ruby</strong>: Another of the bigger scripting languages, this one has a narrower user base, but is really popular for its Ruby On Rails web framework.  They update things quite frequently and are typically on the cutting edge or close to it.</li>
+  <li><strong>Perl</strong>: This is a neat little scripting language that is good for quick automation tasks.  Quite good at flinging regex stuff, was quite common but is now being overtaken by python and simliar.</li>
+  <li><strong>Lua</strong>: This is one that you don’t hear too much about, but is still around and kicking.  Lua interpreters can be quite lightweight, Lua is great for if you need a program you’ve written in a different language to have a scripting language to help extend some things (Think game engine).</li>
+</ul>
+
+<p>The one I learned first was Python, but not by choice.  Python is a language that I wouldn’t recommend as a beginning language, as it relies on whitespace placement in order to run.  I would recommend learning either a programming language like Java or C++ first, or starting out with even something like Javascript.  Get used to using braces to define your code blocks, not indenting.</p>
+
+<h1 id="ive-picked-a-language-now-what">I’ve Picked a Language, Now What?</h1>
+
+<p>Well then, you’re off to the races. The first thing you need to do in order to learn a language, is to have the facilities needed to compile and run the code. This can typically be acquired from the website for the language, or from your package system.
+I’m going to be teaching Java first, but I may also provide tutorials for other languages as well, such as C++ as seen in my <a href="/2017/12/24/data-struct-link-lists">data structures part 1</a>.</p>
+
+<p>So first I’ll walk you through setting up a Java compiler.</p>
+
+<h2 id="on-linux">On Linux:</h2>
+
+<p>If you use a real operating system, use your package manager to install the openjdk.  Look for a jre8 or jre9 version. on Arch Linux you’ll do something like this:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span> <span class="nb">sudo </span>pacman <span class="nt">-S</span> jre9-openjdk</code></pre></figure>
+
+<p>Then type your password and hit enter when it asks if you want to install.</p>
+
+<p>On Debian or Ubuntu it’ll look similar to this, just be sure to double check the package name:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span> <span class="nb">sudo </span>apt-get install openjdk9</code></pre></figure>
+
+<p>Then we’ll also be using vim. So go install that too:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># for arch</span>
+<span class="nv">$ </span> <span class="nb">sudo </span>pacman <span class="nt">-S</span> vim
+
+<span class="c"># for Debian/Ubuntu</span>
+<span class="nv">$ </span> <span class="nb">sudo </span>apt-get install vim</code></pre></figure>
+
+<h2 id="on-windows">On Windows:</h2>
+
+<p>What you need to run java on your computer is a JRE, and a JDK.  both are install when you get the JDK.  Go to <a href="http://www.oracle.com/technetwork/java/javase/downloads/index-jsp-138363.html#javasejdk">Oracle’s website</a> and find the link labeled JDK.  Click it, it’ll download. Run it, and hope it works.<br />
+Then you’ll want to double check that the bin folder of the JDK is in your path.  Open up a command prompt and type <code class="highlighter-rouge">javac</code> into it and see what happens. If it spits out a big thing on help with using it, then it works, if not, you need to go edit your environment variables.</p>
+
+<p>To edit your path, view the instructions <a href="https://www.java.com/en/download/help/path.xml">here</a>. It provides help for Windows 7/8/10.  Basically what you need to do is find where the installer installed the jdk binaries, and then put that file path into your PATH variable.</p>
+
+<p>Next you need a real editor to use with it.  If you’re weak you’ll use Notepad++, but I’ll be using vim so I recommend installing <a href="https://vim.sourceforge.io/download.php#pc">gvim</a> This is the same thing I use, but it’ll have a gui for those so inclined.</p>
+
+<h1 id="next-steps">Next Steps:</h1>
+
+<p>Well the first thing to do is to write a hello world program, and we’ll need to make sure you got all the things set up properly as well.  So first create a file called ‘HelloWorld.java’ you can do this by typing <code class="highlighter-rouge">vim HelloWorld.java</code> on Linux, or opening gvim on windows and making a new file.</p>
+
+<p>Type this into it:</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">HelloWorld</span><span class="o">{</span>
+	
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span> <span class="o">[]</span> <span class="n">args</span><span class="o">){</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Hello World"</span><span class="o">);</span>
+	<span class="o">}</span>
+
+<span class="o">}</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Save it with the good old <code class="highlighter-rouge">:w</code> and then close vim with <code class="highlighter-rouge">:q</code>.  Type in <code class="highlighter-rouge">javac HelloWorld.java</code> and then it’ll compile it.  Then you’ll discover a HelloWorld.class file in your directory.  Run it with <code class="highlighter-rouge">java HelloWorld</code> and then it’ll print the words <code class="highlighter-rouge">Hello World</code> for you to see in all their glory.</p>
+
+<p>In our next installment, we’ll be stepping through this example, as well as introducing some more exciting examples.</p>
+
+
+	  </div>
+
+		
+		<ul class="tag_box list-unstyled list-inline">
+		  <li><i class="fa fa-folder-open"></i></li>
+		  
+		  
+			 
+				<li><a href="/categories.html#tutorials-ref">
+					tutorials <span>(3)</span>
+					,
+				</a></li>
+			 
+				<li><a href="/categories.html#programming-ref">
+					programming <span>(3)</span>
+					,
+				</a></li>
+			 
+				<li><a href="/categories.html#java-ref">
+					java <span>(1)</span>
+					
+				</a></li>
+			
+		  
+		</ul>
+		  
+
+		  
+
+		<hr>
+
+		<div>
+      <section class="share col-sm-6">
+        <h4 class="section-title">Share Post</h4>
+        <a class="btn btn-default btn-sm twitter" href="http://twitter.com/share?text=Beginning Programming Part 1: Getting Started"
+           onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+          <i class="fa fa-twitter fa-lg"></i>
+          Twitter
+        </a>
+        <a class="btn btn-default btn-sm facebook" href="https://www.facebook.com/sharer/sharer.php"
+           onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+          <i class="fa fa-facebook fa-lg"></i>
+          Facebook
+        </a>
+        <a class="btn btn-default btn-sm gplus"
+           onclick="window.open('https://plus.google.com/share?url='+window.location.href, 'google-plus-share', 'width=490,height=530');return false;">
+          <i class="fa fa-google-plus fa-lg"></i>
+          Google+
+        </a>
+      </section>
+
+      <section class="col-sm-6 author">
+	      <!--<img src="//www.gravatar.com/avatar/" class="img-rounded author-image" />-->
+        <h4 class="section-title author-name">Alexander C</h4>
+        <p class="author-bio">Some random programming thoughts.</p>
+      </section>
+    </div>
+
+    <div class="clearfix"></div>
+
+		<ul class="pager">
+		  
+		  <li class="previous"><a href="/2017/12/24/data-struct-link-lists.html" title="Data Structures Part 1: Linked Lists">&larr; Previous</a></li>
+		  
+		  
+			<li class="next disabled"><a>Next &rarr;</a>
+		  
+		</ul>
+
+		<hr>
+	</div>
+	
+	<div class="col-sm-2 sidebar-2">
+	
+	</div>
+</article>
+<div class="clearfix"></div>
+
+
+
+    
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'javaboy132-github-io';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+
+
+		<footer>
+			<hr/>
+			<p>
+				&copy; 2017 Alexander C with <a href="http://jekyllrb.com/">Jekyll</a>. Theme: <a href="https://github.com/dbtek/dbyll">dbyll</a> by dbtek.
+			</p>
+		</footer>
+	</div>
+
+	<script type="text/javascript" src="/assets/resources/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="/assets/resources/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/assets/js/app.js"></script>
+</body>
+</html>
+
+
+
