@@ -1,4 +1,50 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2017-12-29T11:43:42-06:00</updated><id>/</id><title type="html">Coding Thoughts</title><subtitle>Some random programming thoughts.</subtitle><author><name>Alexander C</name></author><entry><title type="html">Beginning Programming 2: Variables and Operations</title><link href="/2017/12/29/beginning-programming-intro-to-variables-and-operations.html" rel="alternate" type="text/html" title="Beginning Programming 2: Variables and Operations" /><published>2017-12-29T08:40:29-06:00</published><updated>2017-12-29T08:40:29-06:00</updated><id>/2017/12/29/beginning-programming-intro-to-variables-and-operations</id><content type="html" xml:base="/2017/12/29/beginning-programming-intro-to-variables-and-operations.html">&lt;p&gt;In this edition of Beginning Programming, we’ll be covering the basics of variables and operators in Java.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-01-02T11:26:27-06:00</updated><id>/</id><title type="html">Coding Thoughts</title><subtitle>Some random programming thoughts.</subtitle><author><name>Alexander C</name></author><entry><title type="html">Getting Into Procedurally Generated Graphics</title><link href="/2018/01/01/getting-into-procedurally-generated-graphics.html" rel="alternate" type="text/html" title="Getting Into Procedurally Generated Graphics" /><published>2018-01-01T07:18:13-06:00</published><updated>2018-01-01T07:18:13-06:00</updated><id>/2018/01/01/getting-into-procedurally-generated-graphics</id><content type="html" xml:base="/2018/01/01/getting-into-procedurally-generated-graphics.html">&lt;p&gt;So I’ve recently found myself interested in the kind of graphics produced by realtime graphics demos. The kind you find on on sites like &lt;a href=&quot;http://www.pouet.net/&quot; title=&quot;This is where you'll find the big bbs for all the cool demoscene stuff.&quot;&gt;this&lt;/a&gt;, the demoscene, everything procedurally generated ones.&lt;/p&gt;
+
+&lt;p&gt;For the longest time I had no idea on how to even start, googling all over the place I couldn’t find good tutorials.
+I had often found links to &lt;a href=&quot;http://www.iquilezles.org&quot; title=&quot;That inigo guy.&quot;&gt;this guy&lt;/a&gt; who is definitely really really good at it, but I often found that it was difficult to find a good hopping off from spot to delve into it.
+And any code I did find didn’t help me know what else to do to get it to actually run, it’s mostly glsl shader code, but I never saw all of it or how to set it up.&lt;/p&gt;
+
+&lt;p&gt;But now, I’ve figured it out.  After dabbling a bunch in &lt;a href=&quot;https://learnopengl.com/&quot; title=&quot;This is one of the best opengl 3.3+ learning places I've found.&quot;&gt;basic opengl programming&lt;/a&gt;, I learned how to create a basic opengl window, load some shaders,
+ and have those draw on two triangles. Once you have that working you can simply do all the rest of the rendering in the fragment shader.
+  You can of course get started right away with this kind of stuff on &lt;a href=&quot;https://www.shadertoy.com/&quot; title=&quot;This site runs the slowest of all sites I've visited, until I got an account and turned on the previews only thing.&quot;&gt;shadertoy&lt;/a&gt; (warning, this site does a lot of webgl stuff right of the bat, it may bog down your browser)
+, but I wanted to learn how to do it locally, not in the browser, since I’d like to be able to set up this system myself, 
+and possibly utilize this kind of rendering for other projects.&lt;/p&gt;
+
+&lt;p&gt;So here’s the basics of how I started, and here’s how you could too.&lt;/p&gt;
+
+&lt;p&gt;First go to &lt;a href=&quot;https://learnopengl.com/&quot; title=&quot;This is one of the best opengl 3.3+ learning places I've found.&quot;&gt;learnopengl.com&lt;/a&gt; and learn how to open a window, and get through the bits where you write the Shader class.
+After that, just take his EBO example, and use it to draw two triangles that cover the view window completely.
+Then go to &lt;a href=&quot;https://www.youtube.com/watch?v=emjuqqyq_qc&quot; title=&quot;That inigo guy's eye tutorial. A bit creepy tbh.&quot;&gt;this tutorial to show how to procedurally generate an eye&lt;/a&gt;, this will show you the basics of how to write a shader.
+Feel free to test it out in &lt;a href=&quot;https://www.shadertoy.com/&quot; title=&quot;This site runs the slowest of all sites I've visited, until I got an account and turned on the previews only thing.&quot;&gt;shadertoy&lt;/a&gt; to make sure you got it written correctly.
+Once it works in shadertoy, you’ll need to make a few minor changes.&lt;/p&gt;
+
+&lt;p&gt;Change the &lt;code class=&quot;highlighter-rouge&quot;&gt;mainImage(...)&lt;/code&gt; method to just be &lt;code class=&quot;highlighter-rouge&quot;&gt;main()&lt;/code&gt; and then at the top define the input and outputs.
+You’ll also need to define the uniforms you use that shadertoy gives you automatically, and pass in those values in your render loop after you tell the shader to be used.&lt;/p&gt;
+
+&lt;p&gt;This should be all you need to get the shaders you write on &lt;a href=&quot;https://www.shadertoy.com/&quot; title=&quot;This site runs the slowest of all sites I've visited, until I got an account and turned on the previews only thing.&quot;&gt;shadertoy&lt;/a&gt; to actually work.
+Of course if you’re like me you’ll want to be able to reload the shaders without having to close and rerun the display program.
+To do this, I made a global pointer to the shader I was using, then in my &lt;code class=&quot;highlighter-rouge&quot;&gt;processInput(..)&lt;/code&gt; function I simply create a new shader and tell the pointer to point to it whenever the R button is pressed.
+This allows me to reload the shader on keypress.&lt;/p&gt;
+
+&lt;p&gt;After that you’re pretty much free to experiment at will, &lt;a href=&quot;http://www.iquilezles.org&quot; title=&quot;That inigo guy.&quot;&gt;Inigo Quilez&lt;/a&gt; definitely has some good tutorials and stuff on his website and his youtube channel, just don’t get too intimidated by the complicated verbage, focus on learning bit by bit, and follow all the things he links to, they all help.&lt;/p&gt;
+
+&lt;p&gt;I also highly recommend looking into raytracing and raymarching.  You can find a decent raymarching introduction &lt;a href=&quot;http://jamie-wong.com/2016/07/15/ray-marching-signed-distance-functions/&quot; title=&quot;Jamie Wong's raymarching tutorial.&quot;&gt;here&lt;/a&gt;.
+That covers using signed distance functions, which you can find a bunch of &lt;a href=&quot;http://www.iquilezles.org/www/articles/distfunctions/distfunctions.htm&quot; title=&quot;That inigo guy's signed distance function list.&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;You can then create cool things like these:&lt;/p&gt;
+
+&lt;p&gt;From the eye tutorial:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/media/proceduraleye.png&quot; alt=&quot;a blue eye&quot; /&gt;
+&lt;img src=&quot;/assets/media/proceduralredeye.png&quot; alt=&quot;a red eye&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Some raymarching with signed distance fields:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/media/proceduralraymarching.png&quot; alt=&quot;a sphere and a torus&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I know that last one doesn’t look too fancy, but considering it was possible to do within a few hours of reading a tutorial on raymarching, I’d say it’s pretty good.  And animating that is enough to slow down my integrated laptop graphics from 6 years ago.&lt;/p&gt;
+
+&lt;p&gt;There definitely isn’t one way to get into procedurally generated graphics programming, but this is how I did it, and I figured I’d share where I started in case others were having trouble getting started as well.&lt;/p&gt;</content><author><name>Alexander C</name></author><summary type="html">So I’ve recently found myself interested in the kind of graphics produced by realtime graphics demos. The kind you find on on sites like this, the demoscene, everything procedurally generated ones.</summary></entry><entry><title type="html">Beginning Programming 2: Variables and Operations</title><link href="/2017/12/29/beginning-programming-intro-to-variables-and-operations.html" rel="alternate" type="text/html" title="Beginning Programming 2: Variables and Operations" /><published>2017-12-29T08:40:29-06:00</published><updated>2017-12-29T08:40:29-06:00</updated><id>/2017/12/29/beginning-programming-intro-to-variables-and-operations</id><content type="html" xml:base="/2017/12/29/beginning-programming-intro-to-variables-and-operations.html">&lt;p&gt;In this edition of Beginning Programming, we’ll be covering the basics of variables and operators in Java.&lt;/p&gt;
 
 &lt;p&gt;If you missed the previous installment, you can find it &lt;a href=&quot;/2017/12/27/2017-12-27-beginning-programming-getting-started.md&quot;&gt;here&lt;/a&gt;. 
 In that episode we talked about the different kinds of languages that are out there, and why you’d use them, then I chose one for you to start learning and walked you through how to set up a Java compiler and told you to get vim because it’s good.&lt;/p&gt;
